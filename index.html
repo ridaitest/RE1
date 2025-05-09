@@ -7,15 +7,19 @@
 </head>
 <body>
   <h1>Hello, this is a test website</h1>
-<!-- Add this to your HTML page, preferably before the closing </body> tag -->
-<script src="https://testmyprompt.com/widget/6817ff6054884bd114a956e4/widget.js"></script>
-<script>
-  // Initialize the widget after the script loads
-  document.addEventListener('DOMContentLoaded', function() {
-    window.AIChatWidget.init({
-      widgetId: "6817ff6054884bd114a956e4"
+  <!-- Add this to your HTML page, preferably before the closing </body> tag -->
+  <script src="https://testmyprompt.com/widget/6817ff6054884bd114a956e4/widget.js"></script>
+  <script>
+    // Initialize the widget after the script loads
+    document.addEventListener('DOMContentLoaded', function() {
+      window.AIChatWidget.init({
+        widgetId: "6817ff6054884bd114a956e4",
+        
+        // Assuming there's an API URL setting in the widget options
+        // Update the API URL to point to your proxy server
+        apiUrl: "http://localhost:3000/proxy"  // Change this to your proxy URL when deployed
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
