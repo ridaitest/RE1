@@ -7,6 +7,7 @@
 </head>
 <body>
   <h1>Hello, this is a test website</h1>
+  
   <!-- Add this to your HTML page, preferably before the closing </body> tag -->
   <script src="https://testmyprompt.com/widget/6817ff6054884bd114a956e4/widget.js"></script>
   <script>
@@ -15,9 +16,8 @@
       window.AIChatWidget.init({
         widgetId: "6817ff6054884bd114a956e4",
         
-        // Assuming there's an API URL setting in the widget options
-        // Update the API URL to point to your proxy server
-        apiUrl: "http://localhost:3000/proxy"  // Change this to your proxy URL when deployed
+        // Update this API URL to point to your deployed proxy server when live
+        apiUrl: "http://localhost:3000/proxy"  // Change to your live server's URL when deployed
       });
     });
   </script>
